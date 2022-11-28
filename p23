@@ -1,0 +1,6 @@
+bal=1000
+amt=int(input('Enter the amount to pay:'))
+mb=bal+amt
+if mb>bal:
+    print('Deposited amount is',amt)
+    print('Main Balance is',mb)

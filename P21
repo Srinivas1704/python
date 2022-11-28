@@ -1,0 +1,7 @@
+pin=int(input('Enter the four digit pin : '))
+p=1023
+if pin==p:
+    print('Continue the transaction.')
+else:
+    print('You enterd incorrect pin.')
+    print('Please try again.')

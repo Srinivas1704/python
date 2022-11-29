@@ -1,0 +1,26 @@
+empno=int(input('Enter the Employee number:'))
+empname=input('Enter the Employee name:')
+basicsal=int(input('Enter the Basic salary:'))
+da=int(input('Enyer the Daily Allowence:'))
+ta=int(input('Enter the Transport Allowence:'))
+hra=int(input('Enter the House Rental Allowence:'))
+netsal=basicsal+da+ta+hra
+print('Employee Number is',empno)
+print('Employee Nmae is',empname)
+print('Basic Salary is',basicsal)
+print('Netsalary is',netsal)
+if netsal>=100000:
+    tax=netsal*10/100
+    print('The Tax of the Employee is',tax)
+elif netsal>=50000 and netsal<100000:
+    tax=netsal*7/100
+    print('The tax of the Employee is',tax)
+elif netsal>=40000 and netsal<50000:
+    tax=netsal*4/100
+    print('The tax of the Employee is',tax)
+elif netsal>=20000 and netsal<40000:
+    tax=netsal*2/100
+    print('The tax of the Employee is',tax)
+else:
+    tax=netsal*0/100
+    print('The tax of the Employee is',tax)

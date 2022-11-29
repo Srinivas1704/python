@@ -1,0 +1,10 @@
+sno=int(input('Enter the Student Number:'))
+sname=input('Enter the Student Name:')
+group=input('Enter the Group of the Student:')
+sub1=int(input('Enter the Marks of Java:'))
+sub2=int(input('Enter the Marks of Python:'))
+sub3=int(input('Enter the Marks of DBMS:'))
+if sub1>35 and sub2>35 and sub3>35:
+    print('PASS')
+else:
+    print('FAIL')

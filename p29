@@ -17,5 +17,5 @@ elif units>=226 and units<=400:
 elif units>400:
     payamount=units*9.75
     fixedcharges=55.00
-Total=payAmount+fixedcharge;
+Total=payamount+fixedcharge;
 print("Electicity bill=",Total)

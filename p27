@@ -1,0 +1,31 @@
+rice=599
+sugar=49
+tpowder=199
+dal=75
+soap=32
+cphno=input('Enter the customer phone number:')
+cname=input('Enter the customer name:')
+caddr=input('enter the customer address:')
+riceq=int(input('How many bags of Rice:'))
+sugarq=int(input('How many kgs of Sugar:'))
+tpowderq=int(input('How many packets of tea powder:'))
+dalq=int(input('How many kgs of Dal:'))
+soapq=int(input('How many Soaps:'))
+bill=(rice*riceq)+(sugar*sugarq)+(tpowder*tpowderq)+(dal*dalq)+(soap*soapq)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+total=tax+bill
+print('Customer phone number:',cphno)
+print('Customer Name:',cname)
+print('Customer Address:',caddr)
+print('Bill:',bill)
+print('Tax:',tax)
+print('Final Bill:',total)

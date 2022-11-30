@@ -1,18 +1,21 @@
 units=int(input("Enter the number of units consumed per month:"))
-if(units<=100):
-    payAmount=units*1.5
+if units>=0 and units<=30:
+    payamount=units*1.95
     fixedcharge=25.00
-elif(units<=200):
-    payAmount=(100*1.5)+(units-100)*2.5
+elif units>=31 and units<=75:
+    payamount=units*3
+    fixedcharge=30.00
+elif units>=76 and units<=125:
+    payamount=units*4.5
+    fixedcharge=45.00
+elif units>=126 and units<=225:
+    payamount=units*6
     fixedcharge=50.00
-elif(units<=300):
-    payAmount=(100*1.5)+(200-100)*2.5+(units-200)*4
-    fixedcharge=75.00
-elif(units<=350):
-    payAmount=(100*1.5)+(200-100)*2.5+(300-200)*4+(units-300)*5
-    fixedcharge=100.00
-else:
-    payAmount=0
-    fixedcharge=1500.00
+elif units>=226 and units<=400:
+    payamount=8.75
+    fixedcharge=55.00
+elif units>400:
+    payamount=units*9.75
+    fixedcharges=55.00
 Total=payAmount+fixedcharge;
 print("Electicity bill=",Total)
